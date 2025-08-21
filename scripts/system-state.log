@@ -1,5 +1,6 @@
-Wed Aug 20 07:21:39 PM EEST 2025
-CPU Info
+=====================
+Thu Aug 21 03:39:06 AM EEST 2025
+======CPU Info=======
 processor	: 0
 BogoMIPS	: 48.00
 Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp flagm2 frint
@@ -45,28 +46,32 @@ CPU variant	: 0x0
 CPU part	: 0x000
 CPU revision	: 0
 
-Memory Info
+====Memory Info===
                total        used        free      shared  buff/cache   available
-Mem:           5.1Gi       2.0Gi       1.1Gi       132Mi       2.2Gi       3.1Gi
+Mem:           5.1Gi       2.2Gi       954Mi       170Mi       2.2Gi       2.9Gi
 Swap:          4.0Gi          0B       4.0Gi
-Numarul de procese in starea de Running este: 
+=====================
+Numarul de procese in starea de Running este:
 2
+=====================
 Utilizarea diskului este: 
 Filesystem      Size  Used Avail Use% Mounted on
 tmpfs           526M  2.0M  524M   1% /run
 /dev/vda2        78G   19G   56G  25% /
-tmpfs           2.6G   45M  2.6G   2% /dev/shm
+tmpfs           2.6G   59M  2.6G   3% /dev/shm
 efivarfs        256K   60K  196K  24% /sys/firmware/efi/efivars
 tmpfs           5.0M  8.0K  5.0M   1% /run/lock
 tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
 tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
 /dev/vda1       1.1G  6.4M  1.1G   1% /boot/efi
 tmpfs           2.6G   12K  2.6G   1% /tmp
-tmpfs           526M  120K  525M   1% /run/user/1000
+tmpfs           526M  132K  525M   1% /run/user/1000
 /dev/sr0        3.6G  3.6G     0 100% /media/ninna/Ubuntu 25.04 arm64
 tmpfs           1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyAMA0.service
+=====================
 Numele sistemului este: 
 ninna-QEMU-Virtual-Machine
+=====================
 Interfete, adrese IP si conexiuni deschise:
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -78,11 +83,11 @@ Interfete, adrese IP si conexiuni deschise:
     link/ether 86:74:5a:6c:ed:3f brd ff:ff:ff:ff:ff:ff
     altname enx86745a6ced3f
     inet 192.168.64.3/24 brd 192.168.64.255 scope global dynamic noprefixroute enp0s1
-       valid_lft 83187sec preferred_lft 83187sec
+       valid_lft 79100sec preferred_lft 79100sec
     inet6 fd1c:71fe:bc55:d254:cf88:2919:9a37:867d/64 scope global temporary dynamic 
-       valid_lft 601590sec preferred_lft 82656sec
+       valid_lft 597502sec preferred_lft 78568sec
     inet6 fd1c:71fe:bc55:d254:8474:5aff:fe6c:ed3f/64 scope global dynamic mngtmpaddr proto kernel_ra 
-       valid_lft 2591905sec preferred_lft 604705sec
+       valid_lft 2592000sec preferred_lft 604800sec
     inet6 fe80::8474:5aff:fe6c:ed3f/64 scope link proto kernel_ll 
        valid_lft forever preferred_lft forever
 3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
@@ -106,3 +111,4 @@ tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*
 tcp   LISTEN 0      4096       127.0.0.1:631        0.0.0.0:*          
 tcp   LISTEN 0      4096            [::]:22            [::]:*          
 tcp   LISTEN 0      4096           [::1]:631           [::]:*          
+=====================
