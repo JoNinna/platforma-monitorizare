@@ -1,0 +1,10 @@
+FROM alpine:latest
+
+RUN apk add --no-cache bash procps iproute2 net-tools coreutils
+
+WORKDIR /app
+
+COPY monitoring.sh .
+RUN chmod +x /app/monitoring.sh
+
+CMD ["bash","./monitoring.sh"]
