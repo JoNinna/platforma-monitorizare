@@ -1,10 +1,16 @@
 FROM alpine:latest
 
+# Instalăm utilitare necesare pentru shell și monitorizare
 RUN apk add --no-cache bash procps iproute2 net-tools coreutils
 
+# Setăm directorul de lucru
 WORKDIR /app
 
+# Copiem scriptul de monitorizare
 COPY monitoring.sh .
+
+# Setăm permisiuni de execuție
 RUN chmod +x /app/monitoring.sh
 
+# Rulăm scriptul 
 CMD ["bash","./monitoring.sh"]

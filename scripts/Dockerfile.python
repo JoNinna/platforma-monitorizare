@@ -1,0 +1,17 @@
+FROM python:3.12-alpine
+
+# Setăm directorul de lucru
+WORKDIR /app
+
+# Copiem scriptul Python
+COPY backup.py .
+
+# Setăm permisiuni de execuție
+RUN chmod +x /app/backup.py
+
+# Setăm variabile de mediu implicite 
+ENV CHECKFORBACKUP=5
+ENV BACKUPDIR=backup
+
+# Rulăm scriptul Python
+CMD ["python3", "./backup.py"]
