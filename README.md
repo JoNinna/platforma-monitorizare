@@ -81,3 +81,12 @@ time.sleep(4)
 - Exemplu de URL:
 - [Sintaxa Markdown](https://www.markdownguide.org/cheat-sheet/)
 - [Schelet Proiect](https://github.com/amihai/platforma-monitorizare)
+
+
+
+sudo cp monitoring.sh ~/work/app/^C
+sudo cp backup.py ~/work/app/
+
+docker run -d --name monitor-shell   -v ~/work/app:/app   -e timeinterval=5   monitoring-shell
+docker run -d --name backup-python   -v ~/work/app:/app   -e CHECKFORBACKUP=5   -e BACKUPDIR=/app/backup   backup-python
+docker logs monitoring-shell
