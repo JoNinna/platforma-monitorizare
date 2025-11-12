@@ -84,9 +84,15 @@ time.sleep(4)
 
 
 
-sudo cp monitoring.sh ~/work/app/^C
+sudo cp monitoring.sh ~/work/app/
 sudo cp backup.py ~/work/app/
 
 docker run -d --name monitor-shell   -v ~/work/app:/app   -e timeinterval=5   monitoring-shell
 docker run -d --name backup-python   -v ~/work/app:/app   -e CHECKFORBACKUP=5   -e BACKUPDIR=/app/backup   backup-python
 docker logs monitoring-shell
+
+
+
+
+
+/bin/python3 /home/ninna/work/platforma-monitorizare/scripts/backup.py
